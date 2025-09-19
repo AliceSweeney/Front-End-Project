@@ -23,3 +23,8 @@ div.gallery-item img {
 p.imageSource {
 	font-size: 10px;
 }
+
+.checklist {
+	margin-left: 30px;
+	text-indent: 10px;
+}

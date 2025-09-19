@@ -4,4 +4,7 @@ $(document).ready(function() {
     $(this).prevAll().css("color", "yellow");
     $(this).nextAll().css("color", "black");
   });
+	$("checklist").click(function() {
+	$(this).
+	});
 });
