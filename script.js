@@ -4,7 +4,23 @@ $(document).ready(function() {
     	$(this).prevAll().css("color", "yellow");
     	$(this).nextAll().css("color", "black");
   });
-    $(".checklist").click(function() {
-		$(this).closest(".checklist-row").toggleClass("checkbox", this.checked);
+  
+  function updateChecklist() {
+		$(".checklist-row").removeClass("completed next-step");
+		
+		$(".checklist").each(function() {
+			if ($(this).is(":checked")) {
+				$(this).closest(".checklist-row").addClass("completed");
+			} else {
+			  if (!$("next-step").length) {
+			  	$(this).closest(".checklist-row").addClass("next-step");
+			  }
+			}
+		});
+	}
+	$(".checklist").on("change", function() {
+		updateChecklist();
 	});
+	
+	updateChecklist();
 });

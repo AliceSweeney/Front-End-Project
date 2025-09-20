@@ -25,13 +25,22 @@ p.imageSource {
 }
 
 
-
-.checkbox {
-	background-color: red;
-    display: inline-block;
-    width: 25%;
-    text-decoration: line-through;
+.checklist-row {
+	padding: 5px;
+	display: inline-block;
+	width: 30%;
 }
+
+
+.completed {
+	background-color: red;
+    text-decoration: line-through;
+    color: white;
+}
+.next-step {
+	background-color: lightgreen;
+}
+
 
 .checklist span {
 	margin-left: 10px;
