@@ -24,10 +24,15 @@ p.imageSource {
 	font-size: 10px;
 }
 
-.checklist {
-	margin-left: 30px;
-}
+
 
 .checkbox {
-	
+	background-color: red;
+    display: inline-block;
+    width: 25%;
+    text-decoration: line-through;
+}
+
+.checklist span {
+	margin-left: 10px;
 }
