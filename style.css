@@ -1,27 +1,30 @@
 .star-rating span {
 	font-size: 2em;
 }
-div.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+* {
+  box-sizing: border-box;
 }
 
-div.gallery-item {
-  margin: 5px;
-  width: 500px;
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
-
-div.gallery-item:hover {
-  border: 1px solid #777;
+.column img {
+	width: 95%;
 }
-
-div.gallery-item img {
-  width: 100%;
-  height: auto;
-}
-p.imageSource {
+.column .imageSource {
 	font-size: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 775px) {
+  .column {
+    width: 100%;
+  }
 }
 
 
