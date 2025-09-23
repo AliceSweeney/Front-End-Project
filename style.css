@@ -7,9 +7,9 @@
 
 .column {
   float: left;
-  width: 32.25%;
+  width: 25%;
   padding: 5px;
-  margin: 10px;
+  margin-left: 10px;
 }
 .column img {
 	width: 95%;
