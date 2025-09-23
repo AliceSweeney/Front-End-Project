@@ -31,7 +31,8 @@
 .checklist-row {
 	padding: 5px;
 	display: inline-block;
-	width: 20%;
+	width: 45%;
+	
 }
 
 
@@ -45,6 +46,11 @@
 }
 
 
-.checklist span {
-	margin-left: 10px;
+.checklist {
+	margin-left: 10px; 
+}
+
+.images {
+	max-width: 100%;
+	height: auto;
 }
